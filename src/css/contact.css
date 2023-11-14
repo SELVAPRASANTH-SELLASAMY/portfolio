@@ -115,12 +115,12 @@ input:focus,textarea:focus{
     height: fit-content;
     width: fit-content;
     position: relative;
+    cursor: pointer;
 }
 .social-media img{
     height: 2.5rem;
     width: 2.5rem;
     margin: 0 1.5rem;
-    cursor: pointer;
 }
 .social-media .media-name{
     height: fit-content;

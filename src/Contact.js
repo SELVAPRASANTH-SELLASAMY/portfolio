@@ -1,4 +1,4 @@
-import fb from './assets/facebook.svg';
+import git from './assets/github.svg';
 import insta from './assets/instagram.svg';
 import linkedin from './assets/linkedin.svg';
 import EMail from './assets/mail.svg';
@@ -111,6 +111,10 @@ const Contact = () => {
             setSpin(false);
         })
     }
+
+    const visit = (url) => {
+        window.open(url, '_blank', 'noreferrer');
+    }
     return(
         <div className="contact-container">
             <div className="contact-form">
@@ -140,19 +144,19 @@ const Contact = () => {
                     <button type='submit' onClick={()=>{setSpin(true)}}>Submit</button>
                 </form>
                 <div className="social-media">
-                    <div className="icons">
-                        <img src={fb} alt="facebook" />
-                        <p className="media-name">Facebook</p>
+                    <div onClick={()=>visit("https://github.com/SELVAPRASANTH-SELLASAMY")} className="icons">
+                        <img src={git} alt="github" />
+                        <p className="media-name">Github</p>
                     </div>
-                    <div className="icons">
+                    <div onClick={()=>visit("https://instagram.com/prasanth_sellasamy?igshid=OGQ5ZDc2ODk2ZA==")} className="icons">
                         <img src={insta} alt="instagram" />
                         <p className="media-name">Instagram</p>
                     </div>
-                    <div className="icons">
+                    <div onClick={()=>visit("https://www.linkedin.com/in/selvaprasanth-s-371898248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app")} className="icons">
                         <img src={linkedin} alt="LinkedIn" />
                         <p className="media-name">Linkedin</p>
                     </div>
-                    <div className="icons">
+                    <div onClick={()=>visit("https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRttNmKsrTfHDsCqksGPFJFxmdjRPpFzSdffJzsXkKJchsjWPSRdcNNGPsbBlLCDvDdGbgQ")} className="icons">
                         <img src={EMail} alt="Email" />
                         <p className="media-name">Email</p>
                     </div>
