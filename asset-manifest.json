@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1b0f307a.css",
+    "main.js": "/portfolio/static/js/main.0f78b00c.js",
+    "static/media/Avatar-2.jpg": "/portfolio/static/media/Avatar-2.5f10f5d4af37b80d8dc3.jpg",
+    "static/media/Avatar-3.jpg": "/portfolio/static/media/Avatar-3.ebe5f4207196f2076278.jpg",
+    "static/media/Avatar-1.jpg": "/portfolio/static/media/Avatar-1.4e36418285daa690e2ed.jpg",
+    "static/media/ipl.jpg": "/portfolio/static/media/ipl.4332bf796f63db9cd0ca.jpg",
+    "static/media/portfolio-image.jpg": "/portfolio/static/media/portfolio-image.3d999a2571e5301e3fba.jpg",
+    "static/media/website.jpg": "/portfolio/static/media/website.4b55105db1c836294d45.jpg",
+    "static/media/youtube.jpg": "/portfolio/static/media/youtube.ea09a30006a75a779b2c.jpg",
+    "static/media/bgImage.jpg": "/portfolio/static/media/bgImage.fa29ca187ee1dabd72d5.jpg",
+    "index.html": "/portfolio/index.html",
+    "static/media/prototype.svg": "/portfolio/static/media/prototype.c2ae7e42bd17feb5fd684bc5a419c118.svg",
+    "static/media/inspiration.svg": "/portfolio/static/media/inspiration.c5767e69572ca5a450b5d0b643172f76.svg",
+    "static/media/planning.svg": "/portfolio/static/media/planning.4cb8147386ae0781372a9358f07aef93.svg",
+    "static/media/coding.svg": "/portfolio/static/media/coding.05a06876c8b69626ce35fd2b8e742821.svg",
+    "static/media/dev.svg": "/portfolio/static/media/dev.7c1fc6b8f3822bbd2ec3ff87f92285f9.svg",
+    "static/media/instagram.svg": "/portfolio/static/media/instagram.58343ea253613167c66a1909840b2d30.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.40a13fa6d0f4d2d559f3eee07c5c359e.svg",
+    "static/media/mail.svg": "/portfolio/static/media/mail.6be2bab72258175fe17cce11a84145f4.svg",
+    "static/media/hamburger.svg": "/portfolio/static/media/hamburger.fa38652d4a5d20ff80fabc9f67bac656.svg",
+    "static/media/close.svg": "/portfolio/static/media/close.6e010f10593701d49f07cc070a37d3a1.svg",
+    "static/media/facebook.svg": "/portfolio/static/media/facebook.ed57b640744ceccd3f18032d96c96255.svg",
+    "main.1b0f307a.css.map": "/portfolio/static/css/main.1b0f307a.css.map",
+    "main.0f78b00c.js.map": "/portfolio/static/js/main.0f78b00c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b0f307a.css",
+    "static/js/main.0f78b00c.js"
+  ]
+}
