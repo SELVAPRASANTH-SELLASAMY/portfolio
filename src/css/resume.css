@@ -1,0 +1,198 @@
+.resume-container{
+    margin: 0 5%;
+    margin-top: 5rem;
+    color: white;
+    user-select: none;
+    text-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    position: relative;
+}
+.resume-container .A4{
+    height: 85vh;
+    width: fit-content;
+    overflow-y: auto;
+}
+.sheet{
+    width: 60vw;
+    background-color: #ecf0f1;
+    aspect-ratio: 1/1.41;
+    text-wrap: wrap;
+}
+.resume-container header{
+    height: 18%;
+    position: relative;
+    border-bottom: .5vw solid black;
+    width: 100%;
+    background-color: #dfe6e9;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+.heading{
+    color: black;
+    width: fit-content;
+    height: fit-content;
+}
+.heading .name{
+    font-size: 3vw;
+    font-weight: 600;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+.heading .name::after{
+    content: '';
+    height: .15vw;
+    width: 100%;
+    margin: .1vw;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.heading .desig{
+    font-size: 1.25vw;
+    margin: .25vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+.phone{
+    height: 1.5vw;
+    display: grid;
+    place-content: center;
+    width: fit-content;
+    display: flex;
+    margin: .5vw 0;
+}
+.phone p{
+    font-size: 1vw;
+    color: black;
+    margin: 0 1vw;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+}
+.phone img{
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50px;
+    align-self: center;
+}
+.other-info{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 5%;
+}
+.resume-container footer{
+    margin: 0 5%;
+}
+.resume-container h1{
+    color: black;
+    font-size: 1.65vw;
+    font-weight: 200;
+    position: relative;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: flex-start;
+}
+.summary h1{
+    justify-content: center;
+}
+.resume-container h1:after{
+    height: .15vw;
+    width: 70%;
+    background-color: black;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    margin: -.25vw 0;
+    justify-self: center;
+}
+.resume-container p,.resume-container h3,.resume-container li{
+    color: black;
+    font-size: 1.2vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+.resume-container h3{
+    font-weight: 600;
+    margin-top: .5vw;
+}
+.summary p{
+    margin: 1vw 0;
+    text-align: center;
+}
+.summary{
+    margin: 2.5vw 0;
+}
+.left-column,.right-column{
+    width: 45%;
+    height: fit-content;
+    color: black;
+}
+.right-column{
+    width: 55%;
+    padding-left: 5%;
+    border-left: .15vw solid black;
+}
+.left-column .education, .left-column .skills,.left-column .paper-presented{
+    height: fit-content;
+    width: fit-content;
+    margin-bottom: 1vw;
+}
+.resume-container ul{
+    margin: .65vw 0;
+    margin-left: 1.25vw;
+}
+.resume-container .columns{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+.projects-done li,.paper-presented li,.memberships li{
+    text-align: justify;
+}
+.paper-presented li{
+    width: 85%;
+}
+.resume-container .print-btn{
+    width: 100%;
+    padding: 5vh 0;
+    display: grid;
+    place-content: center;
+}
+.resume-container button{
+    width: 6rem;
+    height: 2rem;
+    font-size: 65%;
+}
+@media screen and (max-width:769px){
+    .sheet{
+        zoom:150%;
+    }
+}
+@media screen and (min-width:768px){
+    .resume-container button{
+        width: 10rem;
+        height: 3rem;
+        font-size: 75%;
+    }
+}
+@media print{
+    @page{
+        size: A4;
+        margin: 0;
+        border: 0;
+    }
+    button{
+        display: none;
+    }
+}

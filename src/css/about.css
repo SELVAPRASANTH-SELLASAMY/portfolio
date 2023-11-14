@@ -1,0 +1,198 @@
+.about-container{
+    margin: 0 5%;
+    margin-top: 5rem;
+    color: white;
+    user-select: none;
+    text-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.about-container h1{
+    font-size: 1.5rem;
+}
+.about-container p{
+    font-size: 1rem;
+    color: lightgray;
+}
+.progressbars{
+    height: 30rem;
+    width: 30rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.about-me{
+    height: 30rem;
+    width: 60%;
+    text-wrap: wrap;
+    margin-top: 2.1rem;
+    margin-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about,.work{
+    height: fit-content;
+    width: 100%;
+    padding: 1rem 1rem;
+    text-align: justify;
+}
+.work{
+    padding-bottom: 0;
+    /* background-color: green; */
+}
+.flow{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.flow-container{
+    height: 4.5rem;
+    width: 6rem;
+    /*background-color: green;*/
+    font-size: .9rem;
+    display: grid;
+    place-items: center;
+}
+.flow-container img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.flow-container p{
+    font-size: .9rem;
+}
+@media screen and (max-width:1200px){
+    .about-container{
+        flex-direction: column-reverse;
+        margin-bottom: 2.5rem;
+    }
+    .about-me{
+        width: 100%;
+        margin:0 5rem;
+        height: fit-content;
+        padding-top: 0;
+    }
+    .progressbars{
+        width: 60em;
+        /* background-color: rgba(255, 255, 0, 0.432); */
+        height: 13rem;
+        flex-wrap: nowrap;
+        scroll-snap-type: x mandatory;
+    }
+    .about{
+        padding-top: 0;
+    }
+    .about,.work{
+        padding-bottom: 1rem;
+        padding-top: 0;
+    }
+    .flow{
+        padding-bottom: 0;
+    }
+    .skillsets{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: green; */
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width:500px){
+    .about-container p{
+        font-size: .85rem;
+    }
+    .about-container h1{
+        font-size: 1.35rem;
+    }
+    .about-container{
+        margin-bottom:2rem;
+    }
+}
+@media screen and (max-width:425px){
+    .about-container p{
+        font-size: .65rem;
+    }
+    .about-container h1{
+        font-size: 1.15rem;
+    }
+    .flow-container{
+        height: 3.5rem;
+        width: 100%;
+        font-size: .65rem;
+    }
+    .about-container{
+        margin-bottom: 1rem;
+    }
+    .flow-container img{
+        height: 1.85rem;
+        width: 1.85rem;
+    }
+    .flow-container p{
+        font-size: .65rem;
+    }
+    .progressbars{
+        width: 80vw;
+    }
+}
+@media screen and (max-width:300px){
+    .flow-container img{
+        height: 1.25rem;
+        width: 1.25rem;
+    }
+    .about-container p{
+        font-size: .5rem;
+    }
+    .about-container h1{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:1200px){
+    .progressbars{
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width:1035px){
+    .progressbars{
+        width: 45em;
+        align-self: flex-start;
+    }
+    .skillsets{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:768px){
+    .progressbars{
+        width: 30em;
+        height: 30rem;
+        flex-wrap: wrap;
+        scroll-snap-type: y mandatory;
+        align-self: center;
+    }
+}
+@media screen and (min-width:425px) and (max-width:550px){
+    .progressbars{
+        width: 24em;
+        height: 24em;
+    }
+}
+@media screen and (max-width:424px){
+    .skillsets{
+        flex-direction: column;
+        width: 100%;
+    }
+    .progressbars{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-right: 2rem;
+        margin-top: .25rem;
+        width: fit-content;
+        height: fit-content;
+    }
+}

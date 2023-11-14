@@ -1,0 +1,92 @@
+.progressbar-container{
+    color: white;
+    display: inline;
+}
+.rectangle-container{
+    height: 13rem;
+    width: 13rem;
+    border-radius: .5rem;
+    background-color: rgba(13, 82, 231, 0.355);
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.rectangle-container .circle{
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.rectangle-container .circle::before{
+    position: absolute;
+    content: "";
+    height: 4.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    width: 4.5rem;
+    border-radius: 50%;
+    background-color: rgba(0, 43, 128, 0.784);
+    backdrop-filter: blur(100px);
+}
+.rectangle-container .circle .percent{
+    color: white;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.rectangle-container .inner-texts .skillname{
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.rectangle-container .inner-texts{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+.rectangle-container .inner-texts .skill-quote{
+    font-size: .65rem;
+    text-align: center;
+    text-wrap: wrap;
+    width: 90%;
+   align-self: center;
+}
+.wrap-progress{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (min-width:425px) and (max-width:550px){
+    .rectangle-container{
+        height: 10rem;
+        width: 10rem;
+    }
+    .rectangle-container .circle{
+        height: 4.25rem;
+        width: 4.25rem;
+    }
+    .rectangle-container .circle::before{
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .rectangle-container .circle .percent{
+        font-size: 1rem;
+    }
+    .rectangle-container .inner-texts .skillname{
+        font-size: 1rem;
+    }
+    .rectangle-container .inner-texts .skill-quote{
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width:424px){
+    .rectangle-container{
+        margin-right: 0;
+    }
+}

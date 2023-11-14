@@ -1,0 +1,42 @@
+.Carouse .images{
+    height: fit-content;
+    margin: 0 1rem;
+}
+.Carouse .images img{
+    height: 30rem;
+    width: 45rem;
+    border-radius: 1rem;
+}
+.Carouse{
+    /* width: fit-content; */
+    width: 50vw;
+    min-width: 40em;
+}
+.carousel-container{
+    width: fit-content;
+}
+@media screen and (min-width:769px) and (max-width:900px){
+    .Carouse .images img{
+        height: 28rem;
+        width: 40rem;
+    }
+}
+@media screen and (max-width:425px){
+    .Carouse .images img{
+        height: 20rem;
+        width: 15rem;
+    }
+    .Carouse{
+        min-width: 30em;
+    }
+}
+@media screen and (max-width:260px){
+    .Carouse .images img{
+        height: 13.5rem;
+        width: 20rem;
+    }
+    .Carouse{
+        min-width: 22em;
+        padding: 0.5rem 0;
+    }
+}

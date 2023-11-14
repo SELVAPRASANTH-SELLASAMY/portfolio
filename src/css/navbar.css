@@ -1,0 +1,175 @@
+.Navbar-container{
+    color: rgb(238, 238, 238);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    /* background-color: green; */
+    backdrop-filter: blur(50px);
+    width: 100%;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.Navbar-container .point{
+    height: 0.45rem;
+    width: 0.45rem;
+    border-radius: 50%;
+    background-color: greenyellow;
+    margin-right: 0.5rem;
+    margin-top: .3rem;
+}
+.Navbar-container .developer{
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+}
+.Navbar-container p{
+    margin-top: .3rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.Navbar-container .developer h1{
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+    font-weight: 500;
+}
+.Navbar-container .developer img{
+    height: 2.5rem;
+    margin-left: 2.5rem;
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    font-size: .85rem;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    color: lightgray;
+    transition: 250ms;
+}
+nav{
+    height: 100%;
+    width: 25rem;
+    position: absolute;
+    right: 3rem;
+}
+nav ul li::after{
+    content: "";
+    position: absolute;
+    height: .15rem;
+    width: 0;
+    border-radius: 50px;
+    background-color: yellow;
+    bottom: -.25rem;
+    left: 0;
+    transition: 250ms;
+}
+nav ul li:hover:after{
+    width: 100%;
+}
+nav ul li:hover{
+    color: rgb(255, 255, 255);
+}
+.hamburger{
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem 1rem;
+    display: grid;
+    place-items: center;
+    z-index: 2;
+    cursor: pointer;
+    position: fixed;
+    top: 0.85rem;
+    right: 0.85rem;
+    display: none;
+}
+
+@media screen and (max-width:768px)
+{
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 70, 0.862);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: -100vh;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+        transition: 500ms;
+    }
+    .toggleNavbar{
+        top: 0;
+    }
+    nav ul{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    nav ul li{
+        height: 3.5rem;
+        margin: .1rem 0;
+        width: 95%;
+        border-radius: .5rem;
+        display: grid;
+        place-items: center;
+        font-size: 1rem;
+    }
+    nav ul .active{
+        background-image: linear-gradient(rgba(0, 85, 255, 0.596),rgba(25, 0, 255, 0.892));
+    }
+    nav ul li:hover:after{
+        width: 0;
+    }
+    .hamburger{
+        display: grid;
+    }
+}
+@media screen and (max-width:425px){
+    .Navbar-container .developer h1{
+        font-size: 0.85rem;
+        margin: 0 0.2rem;
+        font-weight: 500;
+    }
+    .Navbar-container .developer img{
+        height: 1.85rem;
+        margin-left: 1.85rem;
+    }
+    .Navbar-container p{
+        margin-top: .3rem;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    .Navbar-container .point{
+        height: 0.25rem;
+        width: 0.25rem;
+        margin-right: .25rem;
+    }
+    .hamburger{
+        padding: .5rem .5rem;
+        top: 1.25rem;
+        right: 1.25rem;
+    }
+    nav ul li{
+        height: 2.5rem;
+        font-size: 0.85rem;
+    }
+}
+@media print{
+    .Navbar-container{
+        display: none;
+    }
+}

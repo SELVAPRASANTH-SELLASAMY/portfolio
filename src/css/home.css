@@ -1,0 +1,304 @@
+.home-container{
+    color: white;
+    user-select: none;
+    /* background-color: greenyellow; */
+    margin: 0 5%;
+    margin-top: 5rem;
+    text-wrap: nowrap;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.home-container h1{
+    font-size: 3rem;
+}
+.fdanime{
+    display: flex;
+    align-items: center;
+}
+.cursor{
+    height: 2.45rem;
+    width: .15rem;
+    margin: 0 .25rem;
+    background-color: #FFD700;
+    visibility: hidden;
+    animation: blink 150ms linear infinite;
+}
+@keyframes blink{
+    0%{visibility: visible;}
+    50%{visibility: hidden;}
+    100%{visibility: hidden;}
+}
+.home-container .h2{
+    color: 	#FFD700;
+    font-size: 2.45rem;
+    font-weight: 600;
+}
+.home-container h3{
+    font-size: 2rem;
+}
+.home-container p{
+    font-size: 1rem;
+    color: lightgray;
+    width: 25rem;
+    margin: 2rem 0;
+    text-wrap: wrap;
+}
+.texts{
+    width: fit-content;
+    padding-right: 5rem;
+}
+button{
+    height: 2.5rem;
+    width: 8.5rem;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.462);;
+    color: lightgray;
+    font-size: 1rem;
+    border: .1rem solid rgb(0, 68, 255);
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+button:active{
+    background-color: rgba(43, 43, 43, 0.462);
+}
+.carousel-area{
+    width: 60%;
+    height: auto;
+    padding: 2.5% 5%;
+    border-radius: 1rem;
+    background-color: var(--card-color);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more-information{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--card-color);
+    padding: 2.5rem 5%;
+    backdrop-filter: blur(25px);
+    border-radius: 1rem;
+    animation: open 100ms linear 1;
+    display: none;
+}
+@keyframes open{
+    0%{transform: none;}
+    100%{transform: scale(1.02);}
+}
+.more-information .wrap{
+    width: 100%;
+    height: 88%;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.more-information .para .paragraph{
+    font-size: 1.1rem;
+    color: lightgray;
+    text-align: justify;
+    text-wrap: wrap;
+    margin: .65rem 0;
+}
+.more-information .para{
+    display: flex;
+    flex-direction: column;
+}
+.more-information h1{
+    font-size: 2.5rem;
+    color: white;
+}
+.close-icon img{
+    height: 2rem;
+    width: 2rem;
+}
+.close-icon{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    display:grid;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px)
+{
+    .home-container{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .texts{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+    }
+    .carousel-area{
+        margin: 2rem 0;
+        width: 80%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:900px){
+    .home-container h1{
+        font-size: 2.5rem;
+    }
+    .home-container .h2{
+        font-size: 1.95rem;
+    }
+    .home-container h3{
+        font-size: 1.5rem;
+    }
+    .home-container p{
+        font-size: 0.85rem;
+        width: 20rem;
+        margin: 1.5rem 0;
+    }
+    .cursor{
+        height: 1.95rem;
+    }
+    button{
+        height: 2.25rem;
+        width: 8rem;
+        font-size: 0.85rem;
+    }
+    .texts{
+        padding-right: 2.5rem;
+    }
+    .more-information .para .paragraph{
+        font-size: 0.85rem;
+    }
+    .more-information h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:500px){
+    .home-container h1{
+        font-size: 2.25rem;
+    }
+    .home-container .h2{
+        font-size: 1.95rem;
+    }
+    .home-container h3{
+        font-size: 1.5rem;
+    }
+    .home-container p{
+        font-size: 0.85rem;
+        width: 20rem;
+        margin: 1.5rem 0;
+    }
+    .more-information .para .paragraph{
+        font-size: 0.85rem;
+    }
+    .more-information h1{
+        font-size: 1.85rem;
+    }
+    .close-icon img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .cursor{
+        height: 1.95rem;
+    }
+}
+@media screen and (max-width:425px){
+    .home-container h1{
+        font-size: 2rem;
+    }
+    .home-container .h2{
+        font-size: 1.70rem;
+    }
+    .home-container h3{
+        font-size: 1.25rem;
+    }
+    .home-container p{
+        font-size: 0.65rem;
+        width: 20rem;
+        margin: 1.5rem 0;
+    }
+    button{
+        height: 2.25rem;
+        width: 8rem;
+        font-size: 0.65rem;
+    }
+    .carousel-area{
+        background-color: transparent;
+    }
+    .more-information .para .paragraph{
+        font-size: 0.65rem;
+    }
+    .more-information h1{
+        font-size: 1.5rem;
+    }
+    .cursor{
+        height: 1.70rem;
+    }
+}
+@media screen and (max-width:320px){
+    .home-container h1{
+        font-size: 1.5rem;
+    }
+    .home-container .h2{
+        font-size: 1.25rem;
+    }
+    .home-container h3{
+        font-size: 1rem;
+    }
+    .home-container p{
+        font-size: 0.6rem;
+        width: 12.5rem;
+        margin: 1.5rem 0;
+    }
+    button{
+        height: 2rem;
+        width: 6.5rem;
+        font-size: 0.6rem;
+    }
+    .more-information .para .paragraph{
+        font-size: 0.6rem;
+    }
+    .more-information h1{
+        font-size: 1rem;
+    }
+    .cursor{
+        height: 1.25rem;
+    }
+}
+@media screen and (max-width:260px){
+    .home-container h1{
+        font-size: 1rem;
+    }
+    .home-container .h2{
+        font-size: 0.85rem;
+    }
+    .home-container h3{
+        font-size: 0.5rem;
+    }
+    .home-container p{
+        font-size: 0.35rem;
+        width: 8rem;
+        margin: 1rem 0;
+    }
+    button{
+        height: 1.5rem;
+        width: 5rem;
+        font-size: 0.35rem;
+    }
+    .more-information .para .paragraph{
+        font-size: 0.35rem;
+    }
+    .more-information h1{
+        font-size: 0.5rem;
+    }
+    .cursor{
+        height: 0.85rem;
+    }
+}

@@ -1,0 +1,221 @@
+.contact-container{
+    margin-top: 5rem;
+    color: white;
+    user-select: none;
+    text-wrap: nowrap;
+    width: 100%;
+    min-height: 89vh;
+    display: grid;
+    place-content: center;
+}
+form{
+    height: fit-content;
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-container h1{
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+.input{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.contact-container input{
+    height: 2.5rem;
+    color: white;
+    background-color: transparent;
+    border: .1rem solid white;
+    font-size: 1rem;
+    padding-left: .25rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    transition: 500ms;
+}
+.contact-container textarea{
+    height: 5rem;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    /* margin-top: 1rem; */
+    resize: none;
+    border: .1rem solid white;
+    padding-left: .25rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.contact-container label{
+    font-size: 1rem;
+    position: absolute;
+    left: .25rem;
+    /* font-size: .8rem; */
+    transition: 500ms;
+}
+input:focus ~ label,input:valid ~label{
+    margin-bottom: 3.5rem;
+    font-size: .8rem;
+}
+textarea:focus ~label,textarea:valid ~label{
+    margin-bottom: 6rem;
+    font-size: .8rem;
+}
+input:focus,textarea:focus{
+    border-color: greenyellow;
+}
+.contact-form{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 2.5rem; */
+}
+.contact-container button{
+    margin: 1rem 0;
+    align-self: center;
+}
+.name-warn,.mail-warn,.phn-warn,.message-warn{
+    color: red;
+    font-size: 1rem;
+    position: absolute;
+    right: .25rem;
+    bottom: -1.5rem;
+    font-weight: 600;
+    visibility: hidden;
+}
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+.response-message{
+    color: greenyellow;
+    font-size: 1rem;
+    font-weight: 700;
+    visibility: hidden;
+}
+.social-media{
+    width: fit-content;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: .5rem;
+    margin-top: 1rem;
+}
+.social-media .icons{
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+}
+.social-media img{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+.social-media .media-name{
+    height: fit-content;
+    width: fit-content;
+    padding: .15rem .5rem;
+    background-color: black;
+    border-radius: .25rem;
+    border: .05rem solid white;
+    color: white;
+    font-size: .65rem;
+    position: absolute;
+    top: -1.5rem;
+    right: 50%;
+    visibility: hidden;
+}
+.social-media .icons:hover .media-name{
+    visibility: visible;
+    transition-delay: 2000ms;
+}
+@media screen and (max-width:500px){
+    form{
+        width: 20rem;
+    }
+    .contact-container h1{
+        font-size: 1.35rem;
+    }
+    .contact-container input{
+        font-size: .85rem;
+        height: 1.85rem;
+    }
+    .social-media img{
+        height: 1.85rem;
+        width: 1.85rem;
+        margin: 0 .85rem;
+    }
+    .contact-container textarea{
+        font-size: .85rem;
+    }
+    .contact-container label,.response-message{
+        font-size: .85rem;
+    }
+    input:focus ~ label,input:valid ~label{
+        margin-bottom: 3rem;
+        font-size: .65rem;
+    }
+    textarea:focus ~label,textarea:valid ~label{
+        margin-bottom: 5.5rem;
+        font-size: .65rem;
+    }
+    .input{
+        margin: .85rem 0;
+    }
+    .name-warn,.mail-warn,.phn-warn,.message-warn{
+        font-size: .85rem;
+        bottom: -1.25rem;
+    }
+    .social-media .media-name{
+        display: none;
+    }
+}
+@media screen and (max-width:425px) {
+    form{
+        width: 16rem;
+    }
+    .contact-container h1{
+        font-size: 1.15rem;
+    }
+    .contact-container input{
+        font-size: .65rem;
+        height: 1.65rem;
+    }
+    .social-media img{
+        height: 1.65rem;
+        width: 1.65rem;
+        margin: 0 .65rem;
+    }
+    .contact-container label,.response-message{
+        font-size: .65rem;
+    }
+    input:focus ~ label,input:valid ~label{
+        margin-bottom: 2rem;
+        font-size: .45rem;
+    }
+    textarea:focus ~label,textarea:valid ~label{
+        margin-bottom: 5.5rem;
+        font-size: .45rem;
+    }
+    .input{
+        margin: .65rem 0;
+    }
+    .name-warn,.mail-warn,.phn-warn,.message-warn{
+        font-size: .65rem;
+        bottom: -1rem;
+    }
+    .social-media .media-name{
+        display: none;
+    }
+}
