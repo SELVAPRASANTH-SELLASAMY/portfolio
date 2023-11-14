@@ -31,11 +31,11 @@ const Home = () =>{
                 clearInterval(FDtimeout);
                 try{
                     cursorPlay.current.style.animationPlayState = 'paused';
+                    cursorPlay.current.style.visibility = 'visible';
                 }
                 catch(error){
                     console.log(error);
                 }
-                cursorPlay.current.style.visibility = 'visible';
                 Waiting();
             }
         },150)

@@ -31,11 +31,11 @@ const Navbar = () =>{
             </div>
             <nav ref={menu}>
                 <ul>
-                    <li className={`${currentPage === "/" ? 'active' : null}`} onClick={()=>nav("/")}>Home</li>
-                    <li className={`${currentPage === "/about" ? 'active' : null}`} onClick={()=>nav("/about")}>About</li>
-                    <li className={`${currentPage === "/projects" ? 'active' : null}`} onClick={()=>nav("/projects")}>Projects</li>
-                    <li className={`${currentPage === "/resume" ? 'active' : null}`} onClick={()=>nav("/resume")}>Resume</li>
-                    <li className={`${currentPage === "/contact" ? 'active' : null}`} onClick={()=>nav("/contact")}>Contact</li>
+                    <li style={{'--i':1}} className={`${currentPage === "/" ? 'active' : null}`} onClick={()=>nav("/")}>Home</li>
+                    <li style={{'--i':2}} className={`${currentPage === "/about" ? 'active' : null}`} onClick={()=>nav("/about")}>About</li>
+                    <li style={{'--i':3}} className={`${currentPage === "/projects" ? 'active' : null}`} onClick={()=>nav("/projects")}>Projects</li>
+                    <li style={{'--i':4}} className={`${currentPage === "/resume" ? 'active' : null}`} onClick={()=>nav("/resume")}>Resume</li>
+                    <li style={{'--i':5}} className={`${currentPage === "/contact" ? 'active' : null}`} onClick={()=>nav("/contact")}>Contact</li>
                 </ul>
             </nav>
         </div>
