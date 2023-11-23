@@ -191,6 +191,7 @@
         size: A4;
         margin: 0;
         border: 0;
+        print-color-adjust: exact;
     }
     button{
         display: none;
