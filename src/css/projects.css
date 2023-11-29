@@ -217,6 +217,9 @@
         min-width: 15em;
         margin-bottom: 2.5rem;
     }
+    .project-information{
+        height: 85vh;
+    }
 }
 @media screen and (max-width:501px){
     .works{

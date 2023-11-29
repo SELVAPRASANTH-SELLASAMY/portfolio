@@ -23,6 +23,7 @@ body{
 }
 :root{
     --card-color:rgba(0, 53, 177, 0.458);
+    --golden-blue:rgb(0, 123, 255);
 }
 ::-webkit-scrollbar{
     width: 0;

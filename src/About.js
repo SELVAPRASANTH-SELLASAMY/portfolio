@@ -63,6 +63,7 @@ const About = () =>{
     return(
         <div className="about-container">
             <div className="skillsets">
+                {/* <p className="msg">Scroll to view more</p> */}
                 <h1>Skills</h1>
                 <div className="progressbars">
                     {
@@ -74,7 +75,7 @@ const About = () =>{
             </div>
             <div className="about-me">
                 <div className="about">
-                    <h1>About Me</h1>
+                    <h1>What i'm doing</h1>
                     <p>I am Selvaprasanth Sellasamy. I am currently pursuing my Bachelors degree in Mechanical Engineering domain at Kongu Engineering College, Perundurai, Erode. 
                         I am looking for greatest opportunity as a Software developer at reputed company where i can contribute to the developement of the company with my technical and problem solving skills. 
                         The Strength I have is Whatever task i set to do, I put my maximum effort to complete it with 100% client satisfaction. I am eagerly waiting to start my tech career with the reputed company.

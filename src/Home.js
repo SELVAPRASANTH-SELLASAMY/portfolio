@@ -10,12 +10,18 @@ const Home = () =>{
     const FDdisplayarea = useRef();
     const cursorPlay = useRef();
     const more = useRef();
+    const leftArrow = useRef();
+    const rightArrow = useRef();
+    const wrap = useRef();
 
-    const str = "Frontend developer";
-    const string = str.split('');
+    const tech = ['Frontend developer','Backend Developer','FullStack Developer'];
+    const [te,setTe] = useState(0);
+    //const str = "Frontend developer";
     var FD = "";
     var i = 0;
     const FDAnimate = () =>{
+        var str = tech[te];
+        var string = str.split('');
         const FDtimeout = setInterval(()=>{
             setT1(FDtimeout);
             FD+=string[i];
@@ -29,6 +35,11 @@ const Home = () =>{
             if(i===(string.length))
             {
                 clearInterval(FDtimeout);
+                if(te===2){
+                    setTe(0);
+                }
+                else{
+                setTe(te+1);}
                 try{
                     cursorPlay.current.style.animationPlayState = 'paused';
                     cursorPlay.current.style.visibility = 'visible';
@@ -58,6 +69,12 @@ const Home = () =>{
     useEffect(()=>{
         more.current.style.display = showMore ? 'block' : 'none';
     },[showMore])
+    const swipLeft = () => {
+        wrap.current.scrollBy({left: -wrap.current.offsetWidth, behavior:'smooth'});
+    }
+    const swipRight = () => {
+        wrap.current.scrollBy({left: wrap.current.offsetWidth, behavior:'smooth'});
+    }
     useEffect(()=>{
         return ()=>{
             clearInterval(T1)
@@ -86,40 +103,94 @@ const Home = () =>{
                 <div className="close-icon">
                     <img onClick={()=>setShowMore(false)} src={close} alt="close" />
                 </div>
-                <h1>Who am I</h1>
-                <div className="wrap">
-                    <div className="para">
-                        <div className="paragraph">
-                            I am <b>Selvaprasanth Sellasamy</b> belong from palani, Dindigul district.
-                            I am currently pursuing my Bachelors degree in mechanical engineering domain.
-                            But, More passionate about software developement. So, I decided to build my
-                            career in IT industry.
+                <h1>About me</h1>
+                <div className="wrapper">
+                    <div onClick={()=>swipRight()} ref={rightArrow} className="arrows">&gt;</div>
+                    <div onClick={()=>swipLeft()} ref={leftArrow} className="arrows-left">&gt;</div>
+                    <div ref={wrap} className="wrap">
+                        <h1>Education</h1>
+                        <div className="edu">
+                            <div className="degree">Bachelor of Engineering</div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Stream</td>
+                                        <td>Mechanical Engineering</td>
+                                    </tr>
+                                    <tr>
+                                        <td>College</td>
+                                        <td>Kongu Engineering College</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Year</td>
+                                        <td>2020 - 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CGPA</td>
+                                        <td>8.04 CGPA</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div className="paragraph">
-                            As I navigate the intricate world of mechanical engineering, 
-                            my passion for software development shines like a guiding star. 
-                            While I immerse myself in the principles of mechanics, 
-                            I can't help but be captivated by the boundless possibilities that software engineering offers. 
-                            This field has become more than just a curiosity; it's my calling, 
-                            and I'm determined to forge a remarkable career in the tech industry.
+                        <div className="edu">
+                            <div className="degree">HSC (+2)</div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Stream</td>
+                                        <td>Computer Science</td>
+                                    </tr>
+                                    <tr>
+                                        <td>School</td>
+                                        <td>Sri Renugadevi higher secondary school</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Year</td>
+                                        <td>2019 - 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Percentage</td>
+                                        <td>74.1%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div className="paragraph">
-                            The fusion of my mechanical engineering background and 
-                            burgeoning fascination with software development brings a unique blend of analytical thinking, 
-                            problem-solving skills, and a creative mindset to the table. 
-                            These are the very qualities that thrive in the dynamic landscape of the tech world. 
-                            I envision a future where I can not only design and engineer physical systems but also breathe life into them with the power of code.
+                        <div className="edu">
+                            <div className="degree">SSLC</div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Stream</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>School</td>
+                                        <td>Sri Renugadevi higher secondary school</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Year</td>
+                                        <td>2017 - 2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Percentage</td>
+                                        <td>82.4%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div className="paragraph">
-                            The software industry isn't just about writing lines of code; it's about crafting solutions, optimizing processes, and creating products that 
-                            can change the way we live and work. I yearn to be part of this transformative process. I'm ready to embrace the challenges, 
-                            think outside the box, and make a meaningful impact. Whether it's developing cutting-edge apps, optimizing algorithms, or creating innovative 
-                            software for the next generation of smart devices, I see software development as the canvas where I can paint my aspirations and ideas.
-                        </div>
-                        <div className="paragraph">
-                            I'm not merely switching lanes; I'm merging the best of both worlds. The mechanical engineering foundation I've built is a solid platform on 
-                            which I intend to construct a thriving career in software development. With my passion as my fuel and my skill set as my compass, 
-                            I'm poised to navigate this exciting journey, poised to create, innovate, and make a lasting mark in the ever-evolving landscape of the tech industry.
+                    </div>
+                    <div className="wrap">
+                        <h1>Why I choose Software</h1>
+                        <div className="edu">
+                            <p>I am from computer science background in my HSC. But, In schools there's no opportunity for learning programming even
+                                there's no chance to understand what actually programming is. So, I can't understood about it. After my HSC i'm in the
+                                need to choose my career path. But, i don't have enough cut off marks to get a computer science sheet in good college.
+                                I decided to join in a good college. So, that i can able to equip skills in some areas to survive in this fastest world.
+                                So, I choose Mechanical Engineering. In my third semester i have C programming paper in my academic curricula as a compulsory paper.
+                                My programming career starts from there. The interest i have in computer programming boost's my eagerness in learning more about programming.
+                                So, Apart from curriculum i started to learn from external sources such as social medias & websites. Some of my friends also
+                                help me to equip skills from them. So, I'm happily continue my journey towards searching my position in IT industries.
+                            </p>
                         </div>
                     </div>
                 </div>
