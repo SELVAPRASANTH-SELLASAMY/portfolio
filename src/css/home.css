@@ -77,83 +77,6 @@ button:active{
     align-items: center;
     justify-content: center;
 }
-.more-information{
-    position: fixed;
-    top: 5rem;
-    left: 5%;
-    width: 90%;
-    height: 80vh;
-    background-color: var(--card-color);
-    padding: 2.5rem 5%;
-    backdrop-filter: blur(25px);
-    border-radius: 1rem;
-    animation: open 100ms linear 1;
-    display: none;
-}
-@keyframes open{
-    0%{transform: none;}
-    100%{transform: scale(1.02);}
-}
-.more-information .wrap{
-    width: 100%;
-    height: 95%;
-    display: flex;
-    align-items: center;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    position: relative;
-    scroll-snap-type: x mandatory;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-    margin: .5rem 0;
-}
-.more-information .wrapper{
-    height: 90%;
-    width: 100%;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-.wrap .edu p{
-    width: 100%;
-    text-align: justify;
-    letter-spacing: .05rem;
-    line-height: 1.65rem;
-}
-.edu table{
-    font-size: 1rem;
-}
-.arrows,.arrows-left{
-    font-size: 4rem;
-    font-weight: 300;
-    position: absolute;
-    color: rgba(255, 255, 255, 0.416);
-    right: 2.5%;
-    cursor: pointer;
-    height: 3.5rem;
-    width: fit-content;
-    display: grid;
-    place-content: center;
-    border-radius: 50px;
-    top: 45%;
-    opacity: 0;
-    animation: showOnce 2000ms linear infinite;
-}
-.arrows-left{
-    left: 2.5%;
-    transform: rotate(180deg);
-}
-.arrows:hover,.arrows-left:hover{
-    opacity: 1;
-}
-@keyframes showOnce {
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-
-.more-information h1{
-    font-size: 1.5rem;
-    color: white;
-}
 .close-icon img{
     height: 2rem;
     width: 2rem;
@@ -168,72 +91,10 @@ button:active{
     top: 1rem;
     cursor: pointer;
 }
-.more-information .wrap .edu{
-    min-width: 78vw;
-    height: 22.5rem;
-    padding: 1rem 2rem;
-    padding-bottom: 2rem;
-    border-radius: 1rem;
-    background-color: rgba(0, 29, 98, 0.629);
-    margin: 1rem;
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-    position: relative;
-    overflow-y: auto;
-    display: flex;
-    justify-content: center;
-}
-.wrap h1{
-    position: absolute;
-    left: 1.5rem;
-    top: 0;
-    margin-top: .5%;
-}
-.edu .degree{
-    align-self: center;
-    font-size: 2rem;
-    position: relative;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-}
-.degree::after{
-    content: "";
-    position: absolute;
-    height: .25rem;
-    width: 50%;
-    background-color: yellow;
-    border-radius: 50px;
-    bottom: -.5rem;
-    left: 25%;
-    animation: lineanime 1000ms linear 1;
-}
+
 @keyframes lineanime{
     0%{width: 0;}
     100%{width: 50%;}
-}
-table tr{
-    position: relative;
-    display: block;
-}
-table td{
-    background-color: var(--card-color);
-    padding: 1rem 1rem;
-    border-radius: .25rem;
-    color: lightgray;
-    /* animation: col 1000ms linear 1; */
-}
-table td:nth-child(1){
-    min-width: 15vw;
-}
-table td:nth-child(2){
-    width: 100%;
-}
-@keyframes col{
-    /* 0%{position: absolute;}
-    100%{position: static;} */
 }
 
 @media screen and (max-width:768px)
@@ -254,9 +115,6 @@ table td:nth-child(2){
         margin: 2rem 0;
         width: 80%;
     }
-    .more-information{
-        height: 85vh;
-    }
 }
 @media screen and (min-width:769px) and (max-width:900px){
     .home-container h1{
@@ -265,19 +123,13 @@ table td:nth-child(2){
     .home-container .h2{
         font-size: 1.95rem;
     }
-    .home-container h3,.edu .degree{
+    .home-container h3{
         font-size: 1.5rem;
     }
     .home-container p{
         font-size: 0.85rem;
         width: 20rem;
         margin: 1.5rem 0;
-    }
-    .edu table{
-        font-size: .85rem;
-    }
-    .cursor{
-        height: 1.95rem;
     }
     button{
         height: 2.25rem;
@@ -287,12 +139,6 @@ table td:nth-child(2){
     .texts{
         padding-right: 2.5rem;
     }
-    .more-information .para .paragraph{
-        font-size: 0.85rem;
-    }
-    .more-information h1{
-        font-size: 2rem;
-    }
 }
 @media screen and (max-width:500px){
     .home-container h1{
@@ -301,22 +147,13 @@ table td:nth-child(2){
     .home-container .h2{
         font-size: 1.95rem;
     }
-    .home-container h3,.edu .degree{
+    .home-container h3{
         font-size: 1.5rem;
     }
     .home-container p{
         font-size: 0.85rem;
         width: 20rem;
         margin: 1.5rem 0;
-    }
-    .edu table{
-        font-size: .85rem;
-    }
-    .more-information .para .paragraph{
-        font-size: 0.85rem;
-    }
-    .more-information h1{
-        font-size: 1.85rem;
     }
     .close-icon img{
         height: 1.5rem;
@@ -333,16 +170,13 @@ table td:nth-child(2){
     .home-container .h2{
         font-size: 1.70rem;
     }
-    .home-container h3,.edu .degree{
+    .home-container h3{
         font-size: 1.25rem;
     }
     .home-container p{
         font-size: 0.65rem;
         width: 20rem;
         margin: 1.5rem 0;
-    }
-    .edu table{
-        font-size: .65rem;
     }
     button{
         height: 2.25rem;
@@ -351,12 +185,6 @@ table td:nth-child(2){
     }
     .carousel-area{
         background-color: transparent;
-    }
-    .more-information .para .paragraph{
-        font-size: 0.65rem;
-    }
-    .more-information h1{
-        font-size: 1.5rem;
     }
     .cursor{
         height: 1.70rem;
@@ -369,7 +197,7 @@ table td:nth-child(2){
     .home-container .h2{
         font-size: 1.25rem;
     }
-    .home-container h3,.edu .degree{
+    .home-container h3{
         font-size: 1rem;
     }
     .home-container p{
@@ -377,19 +205,10 @@ table td:nth-child(2){
         width: 12.5rem;
         margin: 1.5rem 0;
     }
-    .edu table{
-        font-size: .6rem;
-    }
     button{
         height: 2rem;
         width: 6.5rem;
         font-size: 0.6rem;
-    }
-    .more-information .para .paragraph{
-        font-size: 0.6rem;
-    }
-    .more-information h1{
-        font-size: 1rem;
     }
     .cursor{
         height: 1.25rem;
@@ -402,7 +221,7 @@ table td:nth-child(2){
     .home-container .h2{
         font-size: 0.85rem;
     }
-    .home-container h3,.edu .degree{
+    .home-container h3{
         font-size: 0.5rem;
     }
     .home-container p{
@@ -410,19 +229,10 @@ table td:nth-child(2){
         width: 8rem;
         margin: 1rem 0;
     }
-    .edu table{
-        font-size: .35rem;
-    }
     button{
         height: 1.5rem;
         width: 5rem;
         font-size: 0.35rem;
-    }
-    .more-information .para .paragraph{
-        font-size: 0.35rem;
-    }
-    .more-information h1{
-        font-size: 0.5rem;
     }
     .cursor{
         height: 0.85rem;
