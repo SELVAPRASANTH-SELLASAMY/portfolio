@@ -1,10 +1,12 @@
+import { saveAs } from 'file-saver';
+import pdfFile from './assets/resume.pdf';
 import './css/resume.css';
 import phone from './assets/phone.png';
 import email from './assets/email.png';
 import add from './assets/address.png';
 const Resume = () => {
-    const printResume = () => {
-        window.print();
+    const downloadHandler = () => {
+        saveAs(pdfFile,'Selvaprasanth.pdf');
     }
     return(
         <div className="resume-container">
@@ -136,7 +138,7 @@ const Resume = () => {
                     </footer>
                 </div>
                 <div className="print-btn">
-                    <button onClick={()=>printResume()}>Print Resume</button>
+                    <button onClick={()=>downloadHandler()}>Print Resume</button>
                 </div>
             </div>
         </div>
