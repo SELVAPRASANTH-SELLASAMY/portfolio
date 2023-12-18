@@ -17,7 +17,7 @@ form{
 }
 .contact-container h1{
     font-size: 2rem;
-    margin: .5rem 0;
+    margin-bottom: .5rem;
 }
 .input{
     height: fit-content;
@@ -108,8 +108,11 @@ input:focus,textarea:focus{
     height: 2.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: .5rem;
     margin-top: 1rem;
+    align-self: center;
+    margin-bottom: 2rem;
 }
 .social-media .icons{
     height: fit-content;

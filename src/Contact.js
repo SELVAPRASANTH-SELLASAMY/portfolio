@@ -142,7 +142,7 @@ const Contact = () => {
                         <div ref={messageWarn} className="message-warn">This field is required!</div>
                     </div>
                     <button type='submit' onClick={()=>{setSpin(true)}}>Submit</button>
-                </form>
+                
                 <div className="social-media">
                     <div onClick={()=>visit("https://github.com/SELVAPRASANTH-SELLASAMY")} className="icons">
                         <img src={git} alt="github" />
@@ -161,6 +161,7 @@ const Contact = () => {
                         <p className="media-name">Email</p>
                     </div>
                 </div>
+                </form>
             </div>
             {spin ? <Loader/> : null}
         </div>

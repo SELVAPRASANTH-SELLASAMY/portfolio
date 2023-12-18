@@ -64,10 +64,8 @@ const Projects = () =>{
                         <div className="wrap-content">
                             <h2>Portfolio</h2>
                             <p>This is my personal portfolio web application build with the help of React.js. 
-                                It consists of simple UI animations and it was optimized for mpbile, tablet and computers. 
+                                It consists of simple UI animations and it was optimized for mobile, tablet and computers. 
                                 In future I am planning to implement some dynamic features with the help of backend techstacks like node.js, express.js etc. 
-                                I need all of your valuable feedbacks and comments about this projects. So. please send your feedbacks by 
-                                clicking on contact on this application.
                             </p>
                             <h3>Techstacks used</h3>
                             <ul>
@@ -82,9 +80,9 @@ const Projects = () =>{
                                 It was optimized for both mobile phones and laptops. If users already have an account they can login using their 
                                 login credentials or else they can create a new account then After logging in they can update their datas passwords 
                                 and can delete their account. Also, users can update their profile pictures. The users login session was maintained 
-                                upto one hour then it will be expired and users are asked to logging in again. Users passwords are hashed using BCRYPT 
-                                which is an inbuit algorithm provided by php itself to ensure the password safety and Users datas are maintained in mySQL 
-                                database. This website will work perfectly on chrome browser.
+                                upto two hours then it will be expired and users are asked to logging in again. Users passwords are hashed using BCRYPT 
+                                which is an inbuit algorithm provided by php itself to ensure the password safety and users datas are stored and maintained in mySQL 
+                                database. This website will work perfectly in chrome browser.
                             </p>
                             <h3>Techstacks used</h3>
                             <ul>
@@ -98,8 +96,8 @@ const Projects = () =>{
                         </div>
                         <div className="wrap-content">
                             <h2>YouTube clone Frontend</h2>
-                            <p>TThis is a cloned site of YouTube. The tech stacks which I had used for this project are React.js and CSS.
-                                Currently I am working on its frontend. Once I will be completing it then I will start to work on backend and server.
+                            <p>This is a frontend clone of YouTube. The tech stacks which I had used for this project are React.js and CSS.
+                                Currently I am working on its frontend. Once it will be finished then I will start to work on backend and server side.
                             </p>
                             <h3>Techstacks used</h3>
                             <ul>
