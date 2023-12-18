@@ -81,6 +81,9 @@
     left: 5rem;
     top: 1rem;
 }
+#skills{
+    margin-bottom: .5rem;
+}
 @media screen and (max-width:1200px){
     .about-container{
         flex-direction: column-reverse;

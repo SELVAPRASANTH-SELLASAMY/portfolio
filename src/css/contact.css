@@ -142,7 +142,7 @@ input:focus,textarea:focus{
 }
 @media screen and (max-width:500px){
     form{
-        width: 20rem;
+        width: 80vw;
     }
     .contact-container h1{
         font-size: 1.35rem;
@@ -183,7 +183,7 @@ input:focus,textarea:focus{
 }
 @media screen and (max-width:425px) {
     form{
-        width: 16rem;
+        width: 80vw;
     }
     .contact-container h1{
         font-size: 1.15rem;

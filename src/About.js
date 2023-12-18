@@ -64,7 +64,7 @@ const About = () =>{
         <div className="about-container">
             <div className="skillsets">
                 {/* <p className="msg">Scroll to view more</p> */}
-                <h1>Skills</h1>
+                <h1 id='skills'>Skills</h1>
                 <div className="progressbars">
                     {
                         progressArray.map((info)=>(

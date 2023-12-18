@@ -1,7 +1,6 @@
 .projects-container{
     color: white;
     user-select: none;
-    /* background-color: greenyellow; */
     margin: 0 5%;
     margin-top: 5rem;
     text-wrap: nowrap;
@@ -72,6 +71,11 @@
     background-color: var(--card-color);
     flex-direction: column;
     display: none;
+    animation: project-info-anime 100ms linear 1;
+}
+@keyframes project-info-anime {
+    0%{transform: scale(1.025);}
+    100%{transform: scale(1);}
 }
 .project-information .wrap-content{
     text-wrap: wrap;
@@ -101,7 +105,7 @@
     display: inline;
 }
 .project-information .wrap-content h2::after{
-    height: .25rem;
+    height: .1rem;
     width: 100%;
     content: '';
     left: 0;
@@ -202,7 +206,8 @@
     }
     .project-container-2{
         width: 90vw;
-        padding-right: 0;
+        /* padding-right: 0; */
+        padding: 0 5%;
     }
     .works{
         padding: 0 2rem 0 0;

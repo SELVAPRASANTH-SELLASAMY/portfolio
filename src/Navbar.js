@@ -16,7 +16,10 @@ const Navbar = () =>{
         ham.current.addEventListener('click', ()=>{
             menu.current.classList.toggle('toggleNavbar');
         })
-    })
+        menu.current.addEventListener('click', ()=>{
+            menu.current.classList.remove('toggleNavbar');
+        })
+    },[])
     return(
         <>
         <div className="Navbar-container">

@@ -8,7 +8,7 @@ const Home = () =>{
     const FDdisplayarea = useRef();
     const cursorPlay = useRef();
 
-    const tech = ['Frontend developer','Backend Developer','FullStack Developer'];
+    const tech = ['FullStack Developer','Frontend developer','Backend Developer'];
     const [te,setTe] = useState(0);
     //const str = "Frontend developer";
     var FD = "";
