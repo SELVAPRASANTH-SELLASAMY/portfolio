@@ -116,7 +116,7 @@ button:active{
         width: 80%;
     }
     .home-container .h2{
-        margin-left: .45rem;
+        margin-left: .7rem;
     }
 }
 @media screen and (min-width:769px) and (max-width:900px){
