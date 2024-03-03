@@ -16,8 +16,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    /* background-image: url(../assets/bgImage.jpg); */
-    background: radial-gradient(circle at 50% 50%, rgba(1, 0, 35, 1) 0%, rgba(0, 14, 85, 1) 50%, rgba(5, 0, 42, 1) 100%);
+    background-image: url(../assets/bgImage.jpg);
+    /* background: radial-gradient(circle at 50% 50%, rgba(1, 0, 35, 1) 0%, rgba(0, 14, 85, 1) 50%, rgba(5, 0, 42, 1) 100%); */
     background-attachment: fixed;
     background-size: cover;
     scroll-behavior: smooth;
