@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.0c335302.css",
+    "main.css": "/static/css/main.994ccfe4.css",
     "main.js": "/static/js/main.9b49e1e6.js",
     "static/media/Avatar-2.jpg": "/static/media/Avatar-2.5f10f5d4af37b80d8dc3.jpg",
     "static/media/Avatar-3.jpg": "/static/media/Avatar-3.ebe5f4207196f2076278.jpg",
@@ -10,6 +10,7 @@
     "static/media/website.jpg": "/static/media/website.4b55105db1c836294d45.jpg",
     "static/media/youtube.jpg": "/static/media/youtube.ea09a30006a75a779b2c.jpg",
     "static/media/resume.pdf": "/static/media/resume.d29e002dd88fdef873c6.pdf",
+    "static/media/bgImage.jpg": "/static/media/bgImage.fa29ca187ee1dabd72d5.jpg",
     "static/media/prototype.svg": "/static/media/prototype.c2ae7e42bd17feb5fd684bc5a419c118.svg",
     "index.html": "/index.html",
     "static/media/inspiration.svg": "/static/media/inspiration.c5767e69572ca5a450b5d0b643172f76.svg",
@@ -22,11 +23,11 @@
     "static/media/mail.svg": "/static/media/mail.6be2bab72258175fe17cce11a84145f4.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.fa38652d4a5d20ff80fabc9f67bac656.svg",
     "static/media/close.svg": "/static/media/close.6e010f10593701d49f07cc070a37d3a1.svg",
-    "main.0c335302.css.map": "/static/css/main.0c335302.css.map",
+    "main.994ccfe4.css.map": "/static/css/main.994ccfe4.css.map",
     "main.9b49e1e6.js.map": "/static/js/main.9b49e1e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c335302.css",
+    "static/css/main.994ccfe4.css",
     "static/js/main.9b49e1e6.js"
   ]
 }
