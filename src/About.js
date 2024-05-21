@@ -12,13 +12,13 @@ const About = () =>{
             quotes:"It is quite easy to create interactive User Interfaces"},
         {
             Id:2,
-            percent:85,
+            percent:75,
             progName:"C++", 
             quotes:"Designed to be a language that balances efficiency"
         },
         {
             Id:3,
-            percent:90,
+            percent:65,
             progName:"JAVA", 
             quotes:"Multi-platform, object-oriented, and network-centric language"
         },
@@ -30,13 +30,13 @@ const About = () =>{
         },
         {
             Id:5,
-            percent:65,
+            percent:75,
             progName:"HTML", 
             quotes:"Used to create and structure content on the World Wide Web"
         },
         {
             Id:6,
-            percent:70,
+            percent:80,
             progName:"CSS", 
             quotes:"Enhancing the visual design of HTML elements."
         },
@@ -57,6 +57,18 @@ const About = () =>{
             percent:55,
             progName:"MySQL", 
             quotes:"Offers efficient data storage and retrieval"
+        },
+        {
+            Id:10,
+            percent:45,
+            progName:"NodeJS",
+            quotes:"NodeJS is non blocking, the way it runs the code by default is asynchronous code"
+        },
+        {
+            Id:11,
+            percent:65,
+            progName:"MongoDB",
+            quotes:"MongoDB is built on a scale-out architecture that has become popular with developers"
         }
         //edit this and add another languages
     ];

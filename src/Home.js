@@ -8,7 +8,7 @@ const Home = () =>{
     const FDdisplayarea = useRef();
     const cursorPlay = useRef();
 
-    const tech = ['FullStack Developer','Frontend developer','Backend Developer'];
+    const tech = ['FullStack Developer','Frontend developer'];
     const [te,setTe] = useState(0);
     //const str = "Frontend developer";
     var FD = "";
@@ -29,7 +29,7 @@ const Home = () =>{
             if(i===(string.length))
             {
                 clearInterval(FDtimeout);
-                if(te===2){
+                if(te===1){
                     setTe(0);
                 }
                 else{
