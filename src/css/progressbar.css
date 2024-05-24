@@ -14,36 +14,9 @@
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
-/* .rectangle-container .circle{
-    height: 5.5rem;
-    width: 5.5rem;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position: relative;
-    display: grid;
-    place-items: center;
-}
-.rectangle-container .circle::before{
-    position: absolute;
-    content: "";
-    height: 4.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    width: 4.5rem;
-    border-radius: 50%;
-    background-color: rgba(0, 43, 128, 0.784);
-    backdrop-filter: blur(100px);
-} */
-/* .rectangle-container .circle .percent{
-    color: white;
-    z-index: 2;
-    font-weight: 600;
-    font-size: 1.25rem;
-} */
-
 svg.circle{
     height: 6.5rem;
     width: 6.5rem;
-    /* background-color: red; */
     display: grid;
     place-content: center;
     border-radius: .25rem;
@@ -66,6 +39,7 @@ svg.circle circle.static-circle{
 svg.circle text{
     font-size: 1.25rem;
     fill: #ffffff;
+    font-weight: 600;
 }
 .rectangle-container .inner-texts .skillname{
     font-weight: 600;
@@ -95,17 +69,6 @@ svg.circle text{
         height: 10rem;
         width: 10rem;
     }
-    /* .rectangle-container .circle{
-        height: 4.25rem;
-        width: 4.25rem;
-    }
-    .rectangle-container .circle::before{
-        height: 3.5rem;
-        width: 3.5rem;
-    }
-    .rectangle-container .circle .percent{
-        font-size: 1rem;
-    } */
     svg.circle{
         height: 4.25rem;
         width: 4.25rem;

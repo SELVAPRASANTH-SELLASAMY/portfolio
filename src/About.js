@@ -87,10 +87,9 @@ const About = () =>{
             </div>
             <div className="about-me">
                 <div className="about">
-                    <h1>What i'm doing</h1>
-                    <p>I am Selvaprasanth Sellasamy. I am currently pursuing my Bachelors degree in Mechanical Engineering domain at Kongu Engineering College, Perundurai, Erode. 
-                        I am looking for greatest opportunity as a Software developer at reputed company where i can contribute to the developement of the company with my technical and problem solving skills. 
-                        The Strength I have is Whatever task i set to do, I put my maximum effort to complete it with 100% client satisfaction. I am eagerly waiting to start my tech career with the reputed company.
+                    <h1>Who Am I</h1>
+                    <p>
+                        I'm Selvaprasanth Sellasamy, a Mechanical Engineering graduate from Kongu Engineering College, Erode, Tamil Nadu. Completed my BE degree in the year 2024. I have developed a keen interest in web developement and frontend developement. My passion for coding and design drives me to constantly learn and adapt new technologies. In addition to my technical expertise, I'm a dedicated and proactive problem-solving and working collaboratively in team enivironments. I'm eager to bring my knowledge and enthusiasm to a software engineering role, where I can contribute to innovative projects and continue to grow professionally.
                     </p>
                 </div>
                 <div className="work">
