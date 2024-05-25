@@ -1,4 +1,4 @@
-.resume-container{
+/* .resume-container{
     margin: 0 5%;
     margin-top: 5rem;
     color: white;
@@ -174,6 +174,11 @@
     height: 2rem;
     font-size: 65%;
 }
+.pdfIframe{
+    height: 85vh;
+    width: 100%;
+    background-color: transparent;
+}
 @media screen and (max-width:769px){
     .sheet{
         zoom:150%;
@@ -184,6 +189,44 @@
         width: 10rem;
         height: 3rem;
         font-size: 75%;
+    }
+}
+@media print{
+    @page{
+        size: A4;
+        margin: 0;
+        border: 0;
+        print-color-adjust: exact;
+    }
+    button{
+        display: none;
+    }
+} */
+.pdfIframe{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    overflow-x: hidden;
+}
+.pdf-container{
+    height: 80vh;
+    width: 51.5rem;
+}
+.resume-container{
+    height: 88vh;
+    width: 100%;
+    margin-top: 5rem;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+.print-btn button{
+    margin: 1rem 38%;
+}
+@media screen and (min-width:768px){
+    .resume-container button{
+        font-size: 70%;
     }
 }
 @media print{
