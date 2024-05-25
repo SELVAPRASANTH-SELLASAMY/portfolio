@@ -4,6 +4,8 @@ import plan from './assets/planning.svg';
 import prototype from './assets/prototype.svg';
 import code from './assets/coding.svg';
 import ProgressBar from './ProgressBar';
+import scrollDownIcon from './assets/drop_down_arrow.svg';
+import { useEffect } from 'react';
 const About = () =>{
     const progressArray = [
         {   Id:1,
@@ -72,6 +74,12 @@ const About = () =>{
         }
         //edit this and add another languages
     ];
+    useEffect(()=>{
+        const arrow = document.querySelector('.scroll-to-view-more');
+        arrow.addEventListener('animationend',()=>{
+            arrow.style.display = 'none';
+        });
+    },[]);
     return(
         <div className="about-container">
             <div className="skillsets">
@@ -83,6 +91,9 @@ const About = () =>{
                             <ProgressBar key={info.Id} props={info}/>
                         ))
                     }
+                </div>
+                <div className="scroll-to-view-more">
+                    <img src={scrollDownIcon} alt="View More" />
                 </div>
             </div>
             <div className="about-me">

@@ -84,6 +84,24 @@
 #skills{
     margin-bottom: .5rem;
 }
+.scroll-to-view-more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scroll-to-view-more img{
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    animation: arrowAnime 1s linear 5 reverse;
+    pointer-events: none;
+}
+@keyframes arrowAnime {
+    From{bottom: -1rem;}
+    To{bottom: 0;}
+}
 @media screen and (max-width:1200px){
     .about-container{
         flex-direction: column-reverse;
@@ -119,6 +137,17 @@
         flex-direction: column;
         /* background-color: green; */
         margin-left: 2rem;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:769px){
+    .scroll-to-view-more img{
+        right: 0;
+        top: 4.5rem;
+        transform: rotate(-90deg);
+    }
+    @keyframes arrowAnime {
+        From{right: -1rem;}
+        To{right: 0;}
     }
 }
 @media screen and (max-width:500px){
@@ -157,6 +186,10 @@
     .progressbars{
         width: 80vw;
     }
+    .scroll-to-view-more img{
+        display: none;
+        animation-play-state: paused;
+    }
 }
 @media screen and (max-width:300px){
     .flow-container img{
@@ -192,6 +225,9 @@
         flex-wrap: wrap;
         scroll-snap-type: y mandatory;
         align-self: center;
+    }
+    .scroll-to-view-more img{
+        margin-right: 2rem;
     }
 }
 @media screen and (min-width:425px) and (max-width:550px){
