@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0acc795c.css",
-    "main.js": "/static/js/main.b1f6121b.js",
+    "main.css": "/static/css/main.5d796206.css",
+    "main.js": "/static/js/main.e1cbf685.js",
     "static/media/Avatar-2.jpg": "/static/media/Avatar-2.3bc429ab0129ae7b56c6.jpg",
     "static/media/Avatar-1.jpg": "/static/media/Avatar-1.34eb37f65fc10dad858b.jpg",
     "static/media/Avatar-3.jpg": "/static/media/Avatar-3.888d69a95bdb193d8003.jpg",
@@ -23,11 +23,12 @@
     "static/media/mail.svg": "/static/media/mail.6be2bab72258175fe17cce11a84145f4.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.fa38652d4a5d20ff80fabc9f67bac656.svg",
     "static/media/close.svg": "/static/media/close.6e010f10593701d49f07cc070a37d3a1.svg",
-    "main.0acc795c.css.map": "/static/css/main.0acc795c.css.map",
-    "main.b1f6121b.js.map": "/static/js/main.b1f6121b.js.map"
+    "static/media/drop_down_arrow.svg": "/static/media/drop_down_arrow.03744abde8b3cba776d0129727537259.svg",
+    "main.5d796206.css.map": "/static/css/main.5d796206.css.map",
+    "main.e1cbf685.js.map": "/static/js/main.e1cbf685.js.map"
   },
   "entrypoints": [
-    "static/css/main.0acc795c.css",
-    "static/js/main.b1f6121b.js"
+    "static/css/main.5d796206.css",
+    "static/js/main.e1cbf685.js"
   ]
 }
