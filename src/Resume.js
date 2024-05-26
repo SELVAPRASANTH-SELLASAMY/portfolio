@@ -146,9 +146,7 @@ const Resume = () => {
             <div className='pdf-container'>
                 <iframe className='pdfIframe' title='resume.pdf' src={`${pdfFile}#toolbar=0`}></iframe>
             </div>
-            <div className="print-btn">
-                <button onClick={()=>downloadHandler()}>Download CV</button>
-            </div>
+            <button onClick={()=>downloadHandler()}>Download CV</button>
         </div>
     )
 }

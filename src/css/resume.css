@@ -203,15 +203,15 @@
     }
 } */
 .pdfIframe{
-    height: 100%;
     width: 100%;
+    aspect-ratio: 1280/1760;
     background-color: transparent;
     border: none;
-    overflow-x: hidden;
 }
 .pdf-container{
     height: 80vh;
     width: 51.5rem;
+    overflow-y: scroll;
 }
 .resume-container{
     height: 88vh;
@@ -221,15 +221,15 @@
     place-content: center;
     overflow: hidden;
 }
-.print-btn button{
-    margin: 1rem 38%;
+.resume-container button{
+    margin: 1rem auto;
 }
 @media screen and (min-width:768px){
     .resume-container button{
         font-size: 70%;
     }
 }
-@media print{
+/* @media print{
     @page{
         size: A4;
         margin: 0;
@@ -239,4 +239,4 @@
     button{
         display: none;
     }
-}
+} */
