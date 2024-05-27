@@ -8,7 +8,7 @@ const PdfViewer = ({pdfLocation}) => {
     return(
         <div className="pdf-viewer">
             <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
-                <Viewer plugins={[zoomPluginInstance]} defaultScale={SpecialZoomLevel.PageWidth} fileUrl={pdfLocation}/>
+                <Viewer plugins={[zoomPluginInstance]} defaultScale={SpecialZoomLevel.PageWidth} theme={'dark'} fileUrl={pdfLocation}/>
             </Worker>
         </div>
     );
