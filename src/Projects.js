@@ -63,26 +63,49 @@ const Projects = () =>{
                     <div className="wrap-all-project-contents">
                         <div className="wrap-content">
                             <h2>Portfolio</h2>
-                            <p>This is my personal portfolio web application build with the help of React.js. 
-                                It consists of simple UI animations and it was optimized for mobile, tablet and computers. 
-                                In future I am planning to implement some dynamic features with the help of backend techstacks like node.js, express.js etc. 
+                            <p>Engaging animations that enhance the visual appeal and interactivity of
+                                my portfolio, grabbing visitor’s attention and making the user experience
+                                more dynamic.
+                                This portfolio is designed to adapt seamlessly to various screen sizes
+                                and devices, ensuring optimal viewing and usability whether accessed
+                                on a desktop, tablet, or smartphone.
+                                A built-in contact form allows visitors to easily reach out to you directly
+                                through your portfolio, providing a convenient and professional means of
+                                communication.
+                                Users have the option to download my resume directly from my portfolio,
+                                making it convenient for potential employers or collaborators to access
+                                my professional credentials offline.
                             </p>
                             <h3>Techstacks used</h3>
                             <ul>
                                 <li>ReactJS</li>
                                 <li>NodeJS</li>
                                 <li>CSS</li>
+                                <li>MongoDB</li>
                             </ul>
                         </div>
                         <div className="wrap-content">
-                            <h2>User sign up & sign in website</h2>
-                            <p>This website is a simple user login and registration website consists of mySQLs CRUD capabilities. 
-                                It was optimized for both mobile phones and laptops. If users already have an account they can login using their 
-                                login credentials or else they can create a new account then After logging in they can update their datas passwords 
-                                and can delete their account. Also, users can update their profile pictures. The users login session was maintained 
-                                upto two hours then it will be expired and users are asked to logging in again. Users passwords are hashed using BCRYPT 
-                                which is an inbuit algorithm provided by php itself to ensure the password safety and users datas are stored and maintained in mySQL 
-                                database. This website will work perfectly in chrome browser.
+                            <h2>Company landing page with user login and registration</h2>
+                            <p>The landing page is designed to be responsive, ensuring it looks and
+                                functions well on various devices and screen sizes, providing a
+                                consistent user experience across platforms.
+                                Users can create accounts by registering with the platform and then log
+                                in securely using their credentials, granting them access to personalized
+                                features and content.
+                                Upon successful login, user’s sessions are initiated, which remain active
+                                for up to one hour. After this period of inactivity, the session expires, and
+                                users are prompted to log in again for security purposes.
+                                Logged-in users have the capability to update their personal details, such
+                                as name, email, and other relevant information, ensuring their profile
+                                remains accurate and up to date.
+                                Users can upload, change, or remove their profile pictures, allowing them
+                                to customize their profiles and personalize their accounts according to
+                                their preferences.
+                                Users have the ability to change their passwords as needed, providing
+                                an additional layer of security and control over their accounts.
+                                Should users choose to do so, they can delete their accounts
+                                permanently from the platform, removing all associated data and ending
+                                their relationship with the company's landing page.
                             </p>
                             <h3>Techstacks used</h3>
                             <ul>
