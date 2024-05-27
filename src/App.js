@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <Helmet>
         <title>SP Tech</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0"/>
       </Helmet>
       <HashRouter>
         <Routes>
